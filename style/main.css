@@ -1,0 +1,140 @@
+:root {
+  --bg_color: #F7F3F1;
+  --heading_color: #333333;
+  --font_color: #747274;
+  --hover_color: #F1A849;
+  --shadow_color: #353232;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap');  */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+  /* font-size: 100%; */
+} 
+
+ul {
+  list-style: none;
+}
+
+
+
+body {
+  background-color: var(--bg_color);
+  color: var(--font_color);
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  /* font-size: 17px; */
+  font-size: 1em;
+  /* letter-spacing: 0.04vw; */
+  line-height: 1.4; 
+}
+
+
+
+
+
+h2, h1 {
+  font-family: 'Crimson Text', serif;
+  text-transform: capitalize;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin: 3vw 0 1vw;
+  color: var(--heading_color);
+  font-size: 170%;
+}
+
+h3 {
+  font-family: 'Crimson Text', serif;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 3vw 0 1vw;
+  color: var(--heading_color);
+  font-size: 140%;
+}
+
+h4 {
+  font-family: 'Crimson Text', serif;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 3vw 0 1vw;
+  color: var(--heading_color);
+  font-size: 120%;
+}
+
+p {
+  margin: 20px 0;
+}
+
+footer {
+  background-color: var(--hover_color);
+  margin: 0;
+  margin-top: 4vw;
+  text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 30vw;
+}
+
+.btn {
+  background-color:white;
+  color: var(--heading_color);
+  border: solid 1px var(--heading_color);
+  width: 30vw;
+  padding: 1.5vw 5vw 1.5vw 1.5vw; 
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 1.5vw 0 3vw 0;
+  display: inline-block;
+  box-shadow: 3px 5px var(--shadow_color);
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s, transform 0.5s;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3vw;
+}
+
+.btn:hover {
+  background-color: var(--hover_color);
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+
+aside {
+ width: 30vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  margin: 40px 3vw 0 50px;
+  width: 60px;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 670px) {
+  .btn {
+    font-size: 12px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .subpage h2, h3 {
+    margin-left: 4vw;
+  }
+}

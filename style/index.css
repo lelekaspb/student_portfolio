@@ -1,0 +1,126 @@
+body {
+  display: grid;
+  grid-template-areas: "hd ma as";
+  grid-template-columns: 0.1fr 0.6fr 0.3fr;
+}
+header {
+  grid-area: hd;
+  grid-column-start: 1;
+  grid-column-end: span 1;
+}
+main {
+  grid-area: ma;
+  grid-column: 2/3;
+}
+aside {
+  grid-area: as;
+  grid-column-start: 3;
+  grid-column-end: span 3;
+  justify-self: end;
+  position: fixed;
+  top: 1vw;
+  right: 0;
+}
+
+aside img {
+  margin-right: 2vw;
+}
+
+
+
+main {
+  margin: 0 7vw 0 4vw;
+}
+
+section {
+  margin: 60px 1vw;
+}
+
+
+
+/* styling the navbar */
+li {
+  list-style: none;
+  margin: 50px 40px 40px 50px;
+
+  transition: background-color 0.5s;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+nav div:hover {
+  background-color: #F1A849;
+}
+nav div {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#email {
+   position: absolute;
+   left: 7px;
+   top: 12px;
+}
+
+#github,
+#linkedin {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+}
+
+.contacts {
+  width: 25px;
+}
+
+
+
+/* media queries */
+@media only screen and (max-width: 770px) {
+  header {
+    display: none;
+  }
+  body {
+    display: grid;
+    grid-template-areas: "ma as";
+    grid-template-columns: 1fr 0.4fr;
+  }
+  header {
+    grid-area: hd;
+    grid-column-start: 0;
+    grid-column-end: span 0;
+  }
+  main {
+    grid-area: ma;
+    grid-column: 1/2;
+  }
+  aside {
+    grid-area: as;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    justify-self: end;
+    position: fixed;
+    top: 1vw;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  aside {
+    display: none;
+  }
+  body {
+    display: block;
+  }
+}
