@@ -48,7 +48,7 @@ body {
 }
 
 
-#lower_case {
+.lower_case {
   text-transform: lowercase;
 }
 

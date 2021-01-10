@@ -96,11 +96,11 @@ nav div {
     grid-template-areas: "ma as";
     grid-template-columns: 1fr 0.4fr;
   }
-  header {
+  /* header {
     grid-area: hd;
     grid-column-start: 0;
     grid-column-end: span 0;
-  }
+  } */
   main {
     grid-area: ma;
     grid-column: 1/2;

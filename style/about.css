@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template-areas: "hd ma as",
+  grid-template-areas: "hd ma as"
                         "fo fo fo";
   grid-template-columns: 0.1fr 0.6fr 0.3fr;
   grid-template-rows: 1fr 30vw; 
@@ -117,8 +117,8 @@ p {
   }
   body {
     display: grid;
-    grid-template-areas: "hd",
-                          "ma",
+    grid-template-areas: "hd"
+                          "ma"
                           "fo";
     grid-template-rows: 0.1fr 1fr min-content; 
   }

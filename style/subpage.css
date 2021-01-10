@@ -8,7 +8,7 @@ nav {
 
 body {
   display: grid;
-  grid-template-areas: "hd ma",
+  grid-template-areas: "hd ma"
                         "fo fo";
   grid-template-columns: 0.1fr 1fr;
   grid-template-rows: 1fr min-content;
@@ -80,8 +80,8 @@ footer div {
 @media only screen and (max-width: 600px) {
   body {
     display: grid;
-    grid-template-areas: "hd",
-                          "ma",
+    grid-template-areas: "hd"
+                          "ma"
                           "fo";
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr min-content;

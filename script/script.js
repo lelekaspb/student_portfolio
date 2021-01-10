@@ -17,14 +17,14 @@ function playVideo() {
   console.log("playVideo");
   if (videoScr.paused == true) {
     videoScr.play();
-    playBtn.style.backgroundImage = "url(../assets/svg/pause.svg)";
-    playBtn.parentElement.title = "pause";
+    playBtn.style.backgroundImage = "url(assets/svg/pause.svg)";
+    // playBtn.parentElement.title = "pause";
     console.log(videoScr.paused);
     videoScr.addEventListener("ended", stopVideo);
   } else {
     videoScr.pause();
-    playBtn.style.backgroundImage = "url(../assets/svg/play.svg)";
-    playBtn.parentElement.title = "play";
+    playBtn.style.backgroundImage = "url(assets/svg/play.svg)";
+    // playBtn.parentElement.title = "play";
   }
 }
 
@@ -32,8 +32,8 @@ function stopVideo() {
   console.log("stopVideo");
   videoScr.pause();
   videoScr.currentTime = 0;
-  playBtn.style.backgroundImage = "url(../assets/svg/play.svg)";
-  playBtn.parentElement.title = "play";
+  playBtn.style.backgroundImage = "url(assets/svg/play.svg)";
+  // playBtn.parentElement.title = "play";
   videoScr.load();
 }
 
