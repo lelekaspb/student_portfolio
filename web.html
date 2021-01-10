@@ -56,7 +56,7 @@
 
     <section id="microcomputer">
       <!-- cant use capitalized here -->
-      <h3>The History of the Micro Computer</h3> 
+      <h3>The History <span id="lower_case">Of The</span>  Micro Computer</h3> 
       <img src="assets/jpg/microcomp_pic.jpg" alt="wireframe of the website's front page">
       <div class="subtext">
         <p>
@@ -72,7 +72,11 @@
 
     <section id="dostoevsky">
       <h3>Interest-Based Website</h3>
-      <img src="assets/jpg/dostoevsky_pic.jpg" alt="sketch and styletile of the website">
+      <picture>
+        <source media="(max-width: 450px)" srcset="assets/jpg/dostoevsky_pic_mobile.jpg.png">
+          <img src="assets/jpg/dostoevsky_pic.jpg" alt="sketch and styletile of the website">
+      </picture>
+
       <div class="subtext">
         <p>
           It was an <b>individual assignment</b> with a <b>focus</b> on semantic markup, styling, and content production of a responsive website.
