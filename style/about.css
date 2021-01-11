@@ -30,8 +30,7 @@ aside {
 }
 footer {
   grid-area: fo;
-  grid-column-start: 1;
-  grid-column-end: span 3;
+  grid-column: 1/ span 3;
   grid-row-start: 2;
   grid-row-end: span 2;
   justify-content: center;
@@ -52,6 +51,10 @@ aside img {
 p {
   margin: 50px 0;
   width: 90%;
+}
+
+#about main {
+  /* margin-right: 8vw; */
 }
 
 #about_p {
@@ -113,9 +116,11 @@ p {
     height: 80px;
     background-color: var(--bg_color);
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1;
   }
-  body {
+  /* body {
     display: grid;
     grid-template-areas: "hd"
                           "ma"
@@ -136,6 +141,11 @@ p {
     grid-area: fo;
     grid-row-start: 3;
     grid-row-end: span 3;
+    grid-column: 1/ span 1;
+  } */
+
+  body {
+    display: block;
   }
   .logo {
     position: static;

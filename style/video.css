@@ -59,6 +59,12 @@
   background-repeat: no-repeat;
 }
 
+#speed_rate {
+  color: var(--heading_color);
+  font-size: 1.7vw;
+  font-weight: 600;
+}
+
 
 @media only screen and (max-width: 600px) {
   #content .subpage {
@@ -78,5 +84,8 @@
     width: 15px;
     height:12px;
     margin: 0 12px 0 12px;
+  }
+  #speed_rate {
+    font-size: 10px;
   }
 }
