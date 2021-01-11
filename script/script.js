@@ -16,7 +16,6 @@ function start() {
 
 function playVideo() {
   console.log("playVideo");
-  
   if (videoScr.paused == true) {
     videoScr.play();
     speedRate.textContent = videoScr.playbackRate + "x";
