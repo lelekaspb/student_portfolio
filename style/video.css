@@ -7,7 +7,7 @@
   width: 78vw;
   height: 44vw;
   overflow: hidden;
-  /* pointer-events: none; */
+  pointer-events: none;
   position: relative;
   border: solid 1px var(--heading_color);
   border-bottom: none;
